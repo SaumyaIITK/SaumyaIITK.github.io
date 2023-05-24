@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Saumya - Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@1,700&family=Poppins:ital,wght@0,400;1,700&display=swap"
+        rel="stylesheet">
+        <style>
+            *{
+            margin: 0;
+            padding: 0;
+        
+        }
+        body{
+            background-color: rgb(2, 2, 61);
+            color: white;
+            
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around   ;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(50, 5, 147);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white ;
+        }
+
+        nav ul li a:hover{
+            color: lavender;
+            font-size: 1.2rem;
+        }
+
+        .left{
+            font-size: 1.2rem;
+        }
+ 
+        .firstSection{
+            display:flex;
+            justify-content: space-around;
+            margin: 40 25px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .firstSection > div{
+            width: 40%;
+        }
+        
+        
+            
+        .leftSection{
+            
+           
+           font-size: 2.1rem;
+           margin: 90 0px;
+        }
+        .rightSection{
+            
+            display: flex;
+            width: 50%;
+        }
+        .rightSection img{
+            
+            margin: 40 0px;
+            width: 100%;
+            height: 90%;
+        }
+        .purple{
+             color: rgb(193, 128, 223);
+        }
+        #element{
+            color: rgb(204, 125, 232);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+        }
+        hr{
+            border: 0;
+            background: rgb(98, 55, 162);
+            height: 0.4px;
+        }
+
+            
+        </style>
+
+</head>
+<body>
+<header>
+    <nav>
+        <div class="left">Saumya's Portfolio</div>
+        <div class="right">
+            <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About me</a></li>
+            <li><a href="">My Projects</a></li>
+            <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Saumya</span>
+          <div>I'm a passionate</div> 
+          <span id="element"></span>
+        </div>
+        
+        <div class="rightSection">
+        <img src="assets/bg.jpg"> 
+        </div>
+    </section>
+    <hr>
+    <section class="secondSection">
+        <h1>Past Experiences </h1>
+    </section>
+</main>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Web</i> Developer', 'A pro coder'],
+      typeSpeed: 50,
+    });
+</script>
+
+</body>
+
+</html>
